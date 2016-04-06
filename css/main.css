@@ -1,0 +1,865 @@
+/* ===== FONTS ===== */
+
+@font-face {
+    font-family: GothamBook;
+    src: url(../fonts/GothamSSm-Book.woff);
+}
+
+@font-face {
+    font-family: GothamMedium;
+    src: url(../fonts/GothamSSm-Medium.woff);
+}
+
+@font-face {
+    font-family: GothamLight;
+    src: url(../fonts/GothamSSm-Light.woff);
+}
+
+
+/* ===== GENERAL CLASSES ===== */
+
+body {
+    background-color: #d9d9d9;
+    padding: 50px;
+}
+
+.general-block {
+    background-color: #fff;
+    border-radius: 4px;
+    box-shadow: 0 1px 3px #919191;
+}
+
+.general-button {
+    font: 15px GothamBook, sans-serif;
+    background-color: #fb6362;
+    color: white;
+    border: none;
+    text-transform: uppercase;
+    border-radius: 3px;
+    box-shadow: 0 1px 4px #999999;
+    border-bottom: 1px solid #755757;
+    cursor: pointer;
+}
+
+.general-input {
+    width: 296px;
+    height: 45;
+    font: 14px GothamLight, sans-serif;
+    color: #999898;
+    background-color: #f4f4f4;
+    padding: 13px 60px 13px 20px;
+    box-sizing: border-box;
+    border-radius: 4px;
+    border: none;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.25);
+}
+
+.sprites {
+    background: url(../img/sprites.png) no-repeat;
+    overflow: hidden;
+    text-align: left;
+}
+
+
+/* ===== CALENDAR ===== */
+
+.calendar {
+    width: 346px;
+    height: 427px;
+    margin-bottom: 50px;
+}
+
+.calendar-header {
+    background-color: #404a58;
+    height: 62px;
+    border-radius: 4px 4px 0 0;
+    position: relative;
+    margin-bottom: 12px;
+}
+
+.calendar-arrow-left {
+    width: 8px;
+    height: 12px;
+    display: block;
+    position: absolute;
+    background-position: -70px -383px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+}
+
+.calendar-arrow-right {
+    width: 8px;
+    height: 12px;
+    display: block;
+    position: absolute;
+    background-position: -70px -535px;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+}
+
+.calendar-date {
+    width: 271px;
+    height: 20px;
+    text-align: center;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.month-year {
+    font: 17px GothamBook, sans-serif;
+    color: white;
+}
+
+.calendar table {
+    margin: 0 auto 20px auto;
+    text-align: center;
+}
+
+.calendar table thead {
+    font: 14px GothamMedium, sans-serif;
+    color: #666;
+}
+
+.calendar thead th {
+    width: 37px;
+    height: 38px;
+}
+
+.calendar table tbody {
+    font: 14px GothamBook, sans-serif;
+    color: #666;
+}
+
+.calendar tbody td {
+    width: 37px;
+    height: 37px;
+    cursor: pointer;
+}
+
+.not-current-month {
+    color: #c5c5c5;
+}
+
+.curent-date {
+    background-color: #fb6362;
+    color: white;
+    font-weight: bold;
+    border-radius: 50%;
+}
+
+.calendar table td:hover {
+    background-color: #fb6362;
+    color: white;
+    font-weight: bold;
+    border-radius: 50%;
+}
+
+.curent-holiday {
+    background-color: #fb6362;
+    color: #404a58;
+    font-weight: bold;
+    border-radius: 50%;
+}
+
+.holiday {
+    color: #fb6362;
+    font-weight: bold;
+}
+
+.calendar form {
+    width: 299px;
+    height: 58px;
+    margin: 0 auto;
+}
+
+.calendar-add-event {
+    width: 299px;
+    height: 58px;
+}
+
+
+/* ===== BOOKING ===== */
+
+.booking {
+    width: 346px;
+    height: 626px;
+    margin-bottom: 50px;
+    overflow: hidden;
+}
+
+.booking figure {
+    margin: 0 0 31px 0;
+}
+
+.booking h3 {
+    font: 25px GothamBook, sans-serif;
+    color: #fbfbfb;
+    margin: 0;
+}
+
+.booking figcaption {
+    font: 25px GothamBook, sans-serif;
+    color: #fbfbfb;
+    margin: -71px 0 1px 22px;
+}
+
+.location {
+    font: 14px GothamLight, sans-serif;
+    margin: 0 0 5px 4px;
+    display: inline-block;
+    height: 17px;
+    background-position: -70px -226px;
+    display: inline-block;
+    text-decoration: none;
+    color: #fbfbfb;
+    padding-left: 17px;
+}
+
+.booking label {
+    font: bold 14px GothamBook, sans-serif;
+    color: #666;
+}
+
+.booking-input-wrapper {
+    position: relative;
+    width: 296px;
+}
+
+.booking form {
+    padding: 0 0 0 25px;
+    box-sizing: border-box;
+}
+
+.booking dd {
+    margin: 0 0 22px 0;
+}
+
+.booking dt {
+    margin: 0 0 8px 0;
+}
+
+.booking-calendar-btn {
+    width: 37px;
+    height: 37px;
+    border: none;
+    border-radius: 3px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 4px;
+    margin: auto;
+    cursor: pointer;
+    background-position: -60px -61px;
+    background-color: #414b59;
+}
+
+#booking-checkbox {
+    display: none;
+}
+
+label[for="booking-checkbox"] {
+    font: 14px GothamBook, sans-serif;
+    color: #666;
+    display: inline-block;
+    cursor: pointer;
+    position: relative;
+    padding: 4px 0 0 35px;
+}
+
+label[for="booking-checkbox"]:before {
+    content: "";
+    width: 23px;
+    height: 22px;
+    display: inline-block;
+    cursor: pointer;
+    background-color: #f4f4f4;
+    border-radius: 3px;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.25);
+    margin: 0 10px 0 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.booking input[type=checkbox]:checked + label[for="booking-checkbox"]:before {
+    content: "";
+    width: 23px;
+    height: 22px;
+    background: url(../img/sprites.png) no-repeat;
+    background-position: -67px -681px;
+    background-color: #f4f4f4;
+}
+
+.checkbox {
+    margin-bottom: 27px;
+}
+
+.booking select {
+    width: 158px;
+    height: 45px;
+    border: none;
+    font: 14px GothamLight, sans-serif;
+    font-weight: bold;
+    color: #414b59;
+    padding-left: 10px;
+    cursor: pointer;
+    line-height: 22px;
+    position: relative;
+    background: none;
+    z-index: 100;
+}
+
+.select-outer {
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.25);
+    border-radius: 4px;
+    background: #f4f4f4;
+    width: 138px;
+    overflow: hidden;
+    display: inline-block;
+    position: relative;
+    margin: 0 16px 0 0;
+}
+
+.select-button {
+    background-position: -57px -2253px;
+    height: 37px;
+    width: 37px;
+    border-radius: 3px;
+    background-color: #414b59;
+    position: absolute;
+    right: 4px;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.select-description {
+    font: bold 14px GothamBook, sans-serif;
+    color: #666;
+    display: inline-block;
+    width: 40%;
+    margin: 0 12px 10px 10px;
+}
+
+.select-wrapper {
+    margin-bottom: 31px;
+}
+
+.booking-button {
+    width: 299px;
+    height: 58px;
+    position: relative;
+    background-color: #fb6362;
+    text-align: center;
+    background-position: -18px -2088px;
+}
+
+
+/* ===== DESTINATION ===== */
+
+.destination {
+    width: 792px;
+    height: 340px;
+    overflow: hidden;
+    margin-bottom: 50px;
+}
+
+.destination-tabs {
+    margin: 0;
+    padding: 0;
+    float: left;
+}
+
+.destination-tabs li {
+    width: 72px;
+    height: 113px;
+    list-style: none;
+    background-color: #404a58;
+}
+
+.destination-tabs li:hover {
+    background-color: #fb6362;
+}
+
+.destination-tabs li:nth-child(1) {
+    background-color: #fb6362;
+    background-position: -47px -952px;
+}
+
+.destination-tabs li:nth-child(2) {
+    border-bottom: 1px solid #242931;
+    background-position: -43px -1275px;
+}
+
+.destination-tabs li:nth-child(3) {
+    background-position: -44px -1444px;
+}
+
+.destination-tabs a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.destination-description {
+    float: left;
+    width: 358px;
+    height: 339px;
+    padding: 0 0 0 35px;
+    box-sizing: border-box;
+}
+
+.destination-description h3 {
+    font: 21px GothamMedium, sans-serif;
+    width: 220px;
+    line-height: 1.46;
+    color: #4d4d4d;
+    margin: 27px 0 5px 0;
+}
+
+.reviews {
+    font: bold 14px GothamLight, sans-serif;
+    color: #999;
+    margin-bottom: 14px;
+    display: inline-block;
+}
+
+.reviews-sum {
+    color: #4d4d4d;
+    margin-right: 6px;
+}
+
+.reviews+p {
+    font: 14px GothamLight, sans-serif;
+    color: #999;
+    margin-bottom: 15px;
+    line-height: 1.9;
+    width: 290px;
+}
+
+.reviews+p+a {
+    font: 14px GothamBook, sans-serif;
+    color: #fb6362;
+    text-decoration: none;
+}
+
+.destination figure {
+    width: 362px;
+    height: 340px;
+    float: left;
+    margin: 0;
+}
+
+.coments,
+.likes {
+    font: 17px GothamBook, sans-serif;
+    text-decoration: none;
+    color: #fff;
+    display: inline-block;
+    width: 82px;
+    height: 26px;
+    padding: 2px 0 0 34px;
+    box-sizing: border-box;
+}
+
+.coments {
+    background-position: -70px -838px;
+}
+
+.likes {
+    background-position: -70px -1156px;
+}
+
+.destination figcaption {
+    margin: -49px 0 0 168px;
+}
+
+.destination figure {
+    position: relative;
+}
+
+.destination figure::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 36px;
+    left: 0px;
+    width: 0px;
+    height: 0px;
+    border: 22px solid;
+    border-color: transparent transparent transparent #fff;
+}
+
+
+/* ===== BAR GRAPH ===== */
+
+.bar-graph {
+    width: 792px;
+    height: 340px;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 50px;
+}
+
+.bar-graph ul {
+    list-style: none;
+    font: 12px GothamMedium, sans-serif;
+    color: #666;
+}
+
+.value-list {
+    position: absolute;
+    top: 37px;
+    left: 2px;
+}
+
+.value-list li {
+    margin-bottom: 55px;
+    position: relative;
+}
+
+.value-list li::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: block;
+    width: 704px;
+    height: 1px;
+    background-color: #eaeaea;
+}
+
+.week-list {
+    position: absolute;
+    bottom: 28px;
+    left: 78px;
+}
+
+.week-list li {
+    display: inline-block;
+}
+
+.week-list li:nth-child(1) {
+    margin-right: 60px;
+}
+
+.week-list li:nth-child(2) {
+    margin-right: 58px;
+}
+
+.week-list li:nth-child(3) {
+    margin-right: 58px;
+}
+
+.week-list li:nth-child(4) {
+    margin-right: 66px;
+}
+
+.week-list li:nth-child(5) {
+    margin-right: 68px;
+}
+
+.week-list li:nth-child(6) {
+    margin-right: 63px;
+}
+
+.bar-list {
+    position: absolute;
+    bottom: 51px;
+    left: 65px;
+}
+
+.bar-list li {
+    display: inline-block;
+    margin-right: 31px;
+}
+
+@-webkit-keyframes mon {
+    0% {
+        height: 0;
+    }
+    100% {
+        height: 49px;
+    }
+}
+
+@-webkit-keyframes tues {
+    0% {
+        height: 0;
+    }
+    100% {
+        height: 62px;
+    }
+}
+
+@-webkit-keyframes wed {
+    0% {
+        height: 0;
+    }
+    100% {
+        height: 119px;
+    }
+}
+
+@-webkit-keyframes thu {
+    0% {
+        height: 0;
+    }
+    100% {
+        height: 158px;
+    }
+}
+
+@-webkit-keyframes fri {
+    0% {
+        height: 0;
+    }
+    100% {
+        height: 129px;
+    }
+}
+
+@-webkit-keyframes sat {
+    0% {
+        height: 0;
+    }
+    100% {
+        height: 169px;
+    }
+}
+
+@-webkit-keyframes sun {
+    0% {
+        height: 0;
+    }
+    100% {
+        height: 143px;
+    }
+}
+
+.anim-mon {
+    animation: mon 2s;
+}
+
+.anim-tues {
+    animation: tues 2s;
+}
+
+.anim-wed {
+    animation: wed 2s;
+}
+
+.anim-thu {
+    animation: thu 2s;
+}
+
+.anim-fri {
+    animation: fri 2s;
+}
+
+.anim-sat {
+    animation: sat 2s;
+}
+
+.anim-sun {
+    animation: sun 2s;
+}
+
+.bar-unit {
+    width: 55px;
+    background-color: #fb6362;
+    border-radius: 2px;
+    cursor: pointer;
+    position: relative;
+}
+
+.bar-unit:hover .value-window {
+    visibility: visible;
+}
+
+.value-window {
+    width: 55px;
+    height: 30px;
+    background-color: #404a58;
+    border-radius: 2px;
+    position: absolute;
+    top: -45px;
+    left: 0;
+    text-align: center;
+    visibility: hidden;
+}
+
+.value-window-show {
+    width: 55px;
+    height: 30px;
+    background-color: #404a58;
+    border-radius: 2px;
+    position: absolute;
+    top: -45px;
+    left: 0;
+    text-align: center;
+}
+
+.value-window span,
+.value-window-show span {
+    font: 12px GothamMedium, sans-serif;
+    color: #fff;
+    display: inline-block;
+    margin-top: 7px;
+}
+
+.value-window::after,
+.value-window-show::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 0;
+    border: 7px solid;
+    border-color: #404a58 transparent transparent transparent;
+    position: absolute;
+    bottom: -14px;
+    left: 21px;
+}
+
+
+/* ===== EMAIL ===== */
+
+.email {
+    width: 380px;
+    padding: 25px;
+    box-sizing: border-box;
+}
+
+.email ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.email form {
+    width: 328px;
+}
+
+.email input,
+.email textarea {
+    width: 100%;
+}
+
+.email textarea {
+    min-height: 223px;
+}
+
+.email input[type="email"] {
+    margin-bottom: 26px;
+}
+
+.email input[type="file"] {
+    margin-bottom: 24px;
+}
+
+.email textarea {
+    resize: none;
+    margin-bottom: 24px;
+}
+
+.email-btn-wrapper {
+    height: 48px;
+    position: relative;
+}
+
+.email input[type="submit"] {
+    width: 127px;
+    height: 48px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.psevdo-file {
+    overflow: hidden;
+    position: relative;
+    display: inline-block;
+    width: 328px;
+}
+
+.file-wrapper {
+    display: inline-block;
+    top: -32px;
+    right: -294px;
+    overflow: hidden;
+    position: relative;
+    width: 210px;
+    height: 19px;
+}
+
+.file-input {
+    position: absolute;
+    top: 0;
+    right: 187px;
+    height: 19px;
+    cursor: pointer;
+    opacity: 0;
+}
+
+.input-file-text {
+    background-position: 226px -1633px;
+    background-color: #f4f4f4;
+    width: 328px;
+}
+
+form .mail-field {
+    width: 328px;
+    padding: 4px 3px 0 3px;
+    margin-bottom: 26px;
+    background-color: #f4f4f4;
+    box-sizing: border-box;
+    border-radius: 4px;
+    border: none;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.25);
+    position: relative;
+}
+
+form .email-input {
+    width: 188px;
+    height: 37px;
+    font: 14px GothamLight, sans-serif;
+    color: white;
+    background-color: #404a58;
+    padding: 12px 20px 12px 12px;
+    box-sizing: border-box;
+    border: none;
+    margin-bottom: 3px;
+}
+
+.add-email {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background-position: -70px -1803px;
+    position: absolute;
+    top: 14px;
+    right: 11px;
+}
+
+.email-delete {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    background-position: -70px -1959px;
+    position: absolute;
+    top: 16px;
+    right: 8px;
+}
+
+.email-item {
+    position: relative;
+    width: 188px;
+}

@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Forms and widgets</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+<!-- Calendar -->
+    <div class="calendar general-block">
+        <header class="calendar-header">
+            <div class="calendar-date">
+                <a href="#" class="calendar-arrow-left sprites"></a>
+                <span class="month-year">May 2014</span>
+                <a href="#" class="calendar-arrow-right sprites"></a>
+            </div>
+        </header>
+        <table>
+            <thead>
+                <tr>
+                    <th>Sun</th>
+                    <th>Mon</th>
+                    <th>Tue</th>
+                    <th>Wed</th>
+                    <th>Thu</th>
+                    <th>Fri</th>
+                    <th>Sat</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="not-current-month">29</td>
+                    <td class="not-current-month">30</td>
+                    <td>1</td>
+                    <td>2</td>
+                    <td class="curent-date">3</td>
+                    <td>4</td>
+                    <td>5</td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td class="holiday">7</td>
+                    <td>8</td>
+                    <td>9</td>
+                    <td>10</td>
+                    <td>11</td>
+                    <td>12</td>
+                </tr>
+                <tr>
+                    <td>13</td>
+                    <td>14</td>
+                    <td>15</td>
+                    <td class="curent-holiday">16</td>
+                    <td>17</td>
+                    <td>18</td>
+                    <td>19</td>
+                </tr>
+                <tr>
+                    <td>20</td>
+                    <td>21</td>
+                    <td>22</td>
+                    <td class="holiday">23</td>
+                    <td>24</td>
+                    <td>25</td>
+                    <td>26</td>
+                </tr>
+                <tr>
+                    <td>27</td>
+                    <td>28</td>
+                    <td>29</td>
+                    <td>30</td>
+                    <td class="not-current-month">1</td>
+                    <td class="not-current-month">2</td>
+                    <td class="not-current-month">3</td>
+                </tr>
+            </tbody>
+        </table>
+        <form action="action.php" method="post" id="calendar-form">
+            <input type="submit" value="add event" class="calendar-add-event general-button">
+        </form>
+    </div>
+<!-- Booking -->
+    <div class="booking general-block">
+        <figure>
+            <img src="img/booking-img.jpg" alt="Booking image" />
+            <figcaption>
+                <h3>Hotel Relais</h3>
+                <a href="https://www.google.by/maps/place/Hotel+Le+Relais+Montmartre/@48.8857953,2.3323588,17z/data=!4m2!3m1!1s0x47e66e4fb869792f:0x16785e21e79ea3ab" class="location sprites">Paris, France</a>
+            </figcaption>
+        </figure>
+        <form action="action.php" method="post" id="booking-form">
+            <dl>
+                <dt>
+                    <label for="check-in">Check in</label>
+                </dt>
+                <dd>
+                    <div class="booking-input-wrapper">
+                        <input type="text" id="check-in" placeholder="9 july, 2016" class="general-input">
+                        <button class="booking-calendar-btn sprites"></button>
+                    </div>
+                </dd>
+                <dt>
+                    <label for="check-out">Check out</label>
+                </dt>
+                <dd>
+                    <div class="booking-input-wrapper">
+                        <input type="text" id="check-out" placeholder="16 july, 2016" class="general-input">
+                        <button class="booking-calendar-btn sprites"></button>
+                    </div>
+                </dd>
+            </dl>
+            <div class="checkbox">
+                <input id="booking-checkbox" type="checkbox" name="check" value="booking-checkbox">
+                <label for="booking-checkbox">Flexible dates</label>
+            </div>
+            <div class="select-wrapper">
+                <span class="select-description">Adults</span>
+                <span class="select-description">Children</span>
+                <div class="select-outer">
+                    <select id="select1" name="select" size="1">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                    </select>
+                    <a class="select-button sprites"></a>
+                </div>
+                <div class="select-outer">
+                    <select id="select2" name="select" size="1">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                    </select>
+                    <a class="select-button sprites"></a>
+                </div>
+            </div>
+            <input type="submit" value="search rooms" class="booking-button general-button sprites">
+        </form>
+    </div>
+<!-- Destination -->
+    <div class="destination general-block">
+        <ul class="destination-tabs">
+            <li class="sprites">
+                <a href="#"></a>
+            </li>
+            <li class="sprites">
+                <a href="#"></a>
+            </li>
+            <li class="sprites">
+                <a href="#"></a>
+            </li>
+        </ul>
+        <div class="destination-description">
+            <h3>My most favourite place in the world</h3>
+            <span class="reviews"><span class="reviews-sum">154</span>Reviews</span>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas a pulvinar ipsum. Aliquam sit amet iaculis dolor. Vivamus sed diam sollicitudin. </p>
+            <a href="#">Read more</a>
+        </div>
+        <figure>
+            <img src="img/destination-photo.jpg" alt="Booking image" />
+            <figcaption>
+                <a href="#" class="coments sprites">752</a>
+                <a href="#" class="likes sprites">2709</a>
+            </figcaption>
+        </figure>
+        <div class="destination-photo">
+        </div>
+    </div>
+<!-- Bar Graph -->
+    <div class="bar-graph general-block">
+        <ul class="value-list">
+            <li>40</li>
+            <li>30</li>
+            <li>20</li>
+            <li>0</li>
+        </ul>
+        <ul class="week-list">
+            <li>Mon</li>
+            <li>Tues</li>
+            <li>Wed</li>
+            <li>Thu</li>
+            <li>Fri</li>
+            <li>Sat</li>
+            <li>Sun</li>
+        </ul>
+        <ul class="bar-list">
+            <li>
+                <div class="bar-unit anim-mon" style="height: 49px">
+                    <div class="value-window-show">
+                        <span>17</span>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="bar-unit anim-tues" style="height: 62px">
+                    <div class="value-window">
+                        <span>19</span>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="bar-unit anim-wed" style="height: 119px">
+                    <div class="value-window">
+                        <span>23</span>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="bar-unit anim-thu" style="height: 158px">
+                    <div class="value-window">
+                        <span>33</span>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="bar-unit anim-fri" style="height: 129px">
+                    <div class="value-window">
+                        <span>24</span>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="bar-unit anim-sat" style="height: 169px">
+                    <div class="value-window-show">
+                        <span>34</span>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="bar-unit anim-sun" style="height: 143px">
+                    <div class="value-window">
+                        <span>30</span>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+<!-- E-mail -->
+    <div class="email general-block">
+        <form action="#">
+            <ul class="mail-field">
+                <li>
+                    <a href="#" class="add-email sprites"></a>
+                </li>
+                <li class="email-item">
+                    <input type="text" placeholder="enter your e-mail..." value="rick.james@mail.com" class="email-input">
+                    <a href="#" class="email-delete sprites"></a>
+                </li>
+                <li class="email-item" style="display: none">
+                    <input type="text" placeholder="enter your e-mail..." value="rick.james@mail.com" class="email-input">
+                    <a href="#" class="email-delete sprites"></a>
+                </li>
+                <li class="email-item" style="display: none">
+                    <input type="text" placeholder="enter your e-mail..." value="" class="email-input">
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <span class="psevdo-file">
+                        <input class="input-file-text general-input sprites" placeholder="Subject" type="text"/>
+                        <span class="file-wrapper">
+                            <input class="file-input" type="file"/>
+                        </span>
+                    </span>
+                </li>
+                <li>
+                    <textarea name="message" id="message" cols="30" rows="10" placeholder="Message" class="general-input"></textarea>
+                </li>
+            </ul>
+            <div class="email-btn-wrapper">
+                <input type="submit" class="general-button" value="send">
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
